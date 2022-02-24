@@ -1,0 +1,652 @@
+__label__true the appointment details include the appointment type ,  appointment date and start time ,  duration ,  the name of the lhcp ,  and appointment comments  . 
+__label__true an lhcp views the number of submitted physiologic data monitoring reports of his or her patients for the current date . 
+__label__true the lhcp clicks this number to view the physiologic data monitoring details of his or her patients for the current date . 
+__label__true the lhcp is presented with a listing of all his or her patients to view physiologic data reported during the current date . 
+__label__true each row in the list includes their blood pressure and glucose levels ,  recording timestamp ,  and whom reported the data  ( patient ,  uap name ,  personal representative name )  . 
+__label__true an lhcp views the number of submitted weight or pedometer data monitoring reports of his or her patients for the current date . 
+__label__true the lhcp clicks this number to view the weight or pedometer monitoring details of his or her patients for the current date . 
+__label__true the lhcp is presented with a listing of all his or her patients to view weight or pedometer data reported during the current date . 
+__label__true each row in the list includes their weight and pedometer reading numbers levels ,  recording timestamp ,  and whom reported the data  ( patient ,  uap name ,  personal representative name )  . 
+__label__true a user  ( a patient ,  patient representative ,  or lhcp )  views the number of unread messages from his or her message inbox . 
+__label__true the user clicks this number to view his or her message inbox . 
+__label__true the user is presented with a list of his or her messages in the message inbox . 
+__label__true each row in the list includes the message subject ,  the name of the sender ,  and timestamp . 
+__label__false by default ,  the messages in the list should be ordered by timestamp ,  the most recent first . 
+__label__true the user selects a message from the list to read by clicking the  ' read '  link beside the row for the message ,  and then the message subject ,  the name of the sender ,  the name of the the recipient ,  timestamp ,  and the message text shall be displayed in a new page . 
+__label__true a user  ( a patient or personal health representative )  views basic information about his or her designated lhcps ,  including the name ,  phone number ,  and contact email information  . 
+__label__false 3 . 2 . 42 . 4 alternate flows . 
+__label__false if the comment is empty ,  the text "no comment" is displayed . 
+__label__false if a patient has no declared lhcp ,  "you have no declared lhcp" is displayed . 
+__label__false 3 . 2 . 42 . 5 logging . 
+__label__false 3 . 2 . 43 uc43 view activity feed use case . 
+__label__false 3 . 2 . 43 . 1 preconditions . 
+__label__false the user  ( patient )  has authenticated himself or herself in the itrust medical records system  ( uc3 )  . 
+__label__false 3 . 2 . 43 . 2 main flow . 
+__label__true after the patient logs in ,  an activity feed is displayed  . 
+__label__false 3 . 2 . 43 . 3 sub-flows . 
+__label__true the activity feeds show the information below  ( if the accessor is an lhcp ,  the accessor ' s name in the displayed activity shall be linked to the lhcp ' s contact information )  :
+__label__true * who or when created or disabled the patient . 
+__label__true * who or when accessed the patient ' s demographic information  ( other then dlhcp )  . 
+__label__true * who or when accessed or edited the patient ' s medical records  ( i . e .  ,  personal health records )   ( other then dlhcp )  . 
+__label__true * who or when documented or edited the patient ' s office visits  ( other then dlhcp )  . 
+__label__true * who or when declared or undeclared the patient ' s personal representative . 
+__label__true * who or when analyzed risk of chronic disease for the patient  ( other then dlhcp )  . 
+__label__true * who or when proactively determined needed patient care for the patient  ( other then dlhcp )  . 
+__label__true * who or when viewed the patient ' s prescription report  ( other then dlhcp )  . 
+__label__true * who or when viewed the patient ' s emergency electronic health record  ( other then dlhcp )  . 
+__label__true * who or when scheduled an appointment with the patient . 
+__label__true * who or when accessed the patient ' s comprehensive reports  ( other then dlhcp )  . 
+__label__true * who or when viewed laboratory procedure status of the patient or edited laboratory procedure of the patient  ( other then dlhcp )  . 
+__label__true * who or when accessed the patient ' s information  ( name ,  address ,  and date of last office visit )   ( other then dlhcp )  . 
+__label__true * who or when sent the patient a message . 
+__label__true * who or when proactively confirmed prescription-renewal needs for the patient  ( other then dlhcp )  . 
+__label__true * who or when referred the patient for consultations . 
+__label__true * who or when added or deleted the patient from monitoring list . 
+__label__true * who or when prescribed drug to the patient  ( other then dlhcp )  . 
+__label__true * who or when reported remote monitoring information for the patient . 
+__label__true * the date and time of each of the patient ' s successful authentications . 
+__label__true * who or when referred a patient to another hcp . 
+__label__true * who or when marked a lab procedure as completed . 
+__label__false only the most recent 20 activities are listed in the user page after login . 
+__label__false if there are more than the currently listed activities ,  a link of "older activities" shall be displayed  . 
+__label__false the patient can choose to click this link . 
+__label__false the system shall append 20 more activities to the end of the currently listed activities on the same page . 
+__label__false similarly if there are more than the currently listed activities ,  a link of "older activities" shall be further displayed  and so on . 
+__label__false 3 . 2 . 43 . 4 alternate flows . 
+__label__false if there are no older activities besides the currently listed activities ,  no link of "older activities" is displayed . 
+__label__false 3 . 2 . 43 . 5 logging . 
+__label__false 3 . 2 . 44 uc44 patient specific instructions . 
+__label__false 3 . 2 . 44 . 1 preconditions . 
+__label__false an hcp is a registered user of the itrust medical records system  ( uc2 )  . 
+__label__false a patient is a registered user of the itrust medical records system  ( uc1 )  . 
+__label__false the itrust user  ( hcp or patient )  has authenticated himself or herself in the itrust medical records system  ( uc3 )  . 
+__label__false 3 . 2 . 44 . 2 main flow . 
+__label__true an hcp chooses to add  or edit  patient specific instructions ,  document an office visit or modify an already documented office visit . 
+__label__true the hcp enters a mid or a patient  or name of a patient and confirms their selection  . 
+__label__true and hcp chooses to add  or edit  patient specific instructions . 
+__label__true a patient chooses to view their patient specific instructions by selecting a link named "patient specific instructions" under the view heading in the left hand menu  . 
+__label__false 3 . 2 . 44 . 3 sub-flows . 
+__label__true the hcp enters a mid  or name of a patient and confirms their selection  . 
+__label__true the hcp enters the following information under a section for patient specific instructions:
+__label__true * a descriptive name for the instructions  ( required )  ,  . 
+__label__true * a url to an external website containing patient specific instructions  ( required )  ,  . 
+__label__true * additional comments for the patient  ( required )  . 
+__label__true after entering all required information ,  the hcp selects the add button  . 
+__label__false all events are logged  ( uc5 )  and the hcp remains on the office visit page to verify their changes  ( uc11 )  . 
+__label__true hcps can return to an office visit and modify any patient specific instruction information or delete one or more patient specific instructions  . 
+__label__false the editing event and deletion events are logged  ( uc5 )  and the hcp remains on the office visit page to verify their changes  ( uc11 )  . 
+__label__true patient specific instructions are listed for a patient . 
+__label__true in each row ,  the descriptive name is a link to the url containing patient specific instructions . 
+__label__true the row also contains the hcp that provided the instructions ,  the hcp comments ,  the office visit date ,  and the latest add or modification date . 
+__label__false the office visit date should link to the patient ' s view of the office visit  ( uc9 )  . 
+__label__true the patient ' s access of the instructions are logged  ( uc5 )  . 
+__label__true patient specific instructions for an office visit are listed . 
+__label__false in each row ,  the descriptive name is a link to the url containing patient specific instructions . 
+__label__true the row also contains the hcp ' s comments ,  latest add or modification date ,  and an option to edit and delete the patient specific instructions  . 
+__label__false 3 . 2 . 44 . 4 alternate flows . 
+__label__false the hcp types an invalid medical identification number and is prompted to try again . 
+__label__false the patient chosen is not the desired patient . 
+__label__false the health care personnel does not confirm the selection and is prompted to try again . 
+__label__false the fields for this use case accept the following information: letters  ( upper and lower case )  ,  numbers ,  blankspace and carriage return . 
+__label__false the hcp is notified if any of the fields contain characters that are not in the above list . 
+__label__true when notifying the user of their error ,  all fields are populated with the previously entered input so that the hcp can edit their entry . 
+__label__false the hcp is notified that the required fields contain too many characters . 
+__label__false the following are the maximum lengths: name - 100 characters; url - 250 characters; comments - 500 characters . 
+__label__false the hcp is notified that required fields contain no input . 
+__label__false all fields are populated with the previously enter input so that the hcp can edit their entry . 
+__label__false 3 . 2 . 44 . 5 logging . 
+__label__false 3 . 2 . 45 uc45 flow of events for the request bio surveillance use case . 
+__label__false 3 . 2 . 45 . 1 precondition . 
+__label__false an lhcp or public health agent  ( or pha )  is a registered user of the itrust medical records system  ( uc2 )  . 
+__label__false the itrust user has authenticated himself or herself in the itrust medical records system  ( uc3 )  . 
+__label__false 3 . 2 . 45 . 2 main flow . 
+__label__true a lhcp or pha chooses to examine recent trends in diagnoses  or to determine if an ailment is reaching epidemic proportions in a given area . 
+__label__false allowable epidemic queries are malaria  and influenza  . 
+__label__false all events are logged  ( uc5 )  . 
+__label__false 3 . 2 . 45 . 3 sub-flows . 
+__label__true the user can choose to examine recent trends in diagnoses . 
+__label__true the user can choose any diagnosis code  and type in the desired patient zip code  and a start and end date  . 
+__label__true the lhcp is then provided counts for the specified time period as well as a bar chart . 
+__label__true the counts shown include:  ( 1 )  the number of cases for the exact zip code provided; and  ( 2 )  the number of cases for the region  ( region defined by the zip code that match the first three numbers in the provided zip code  ( e . g .  if zip code 27695 is provided ,  all data with zip code 276xx is analyzed ,  where each x is any digit from 0-9 )  . 
+__label__true the user can choose a malaria diagnosis  and type in the desired zip code  and a week  ( which may be selected by start and end date ,  start date only ,  calendar control ,  dropdown ,  or any other suitable means )  within the last year  . 
+__label__true the data in the database is analyzed according to the malaria epidemic heuristic to determine if an epidemic is occurring in the region defined by the zip code that match the first three numbers in the provided zip code  ( e . g .  if zip code 27695 is provided ,  all data with zip code 276xx is analyzed ,  where each x is any digit from 0-9 )  . 
+__label__true the lhcp is provided with a bar chart of diagnosis counts during the specified time period as well as a yes or no answer on whether an epidemic is occurring during any consecutive two weeks during the time period . 
+__label__true the user can choose a influenza diagnosis  and type in the desired zip code  and a week  ( which may be selected by start and end date ,  start date only ,  calendar control ,  dropdown ,  or any other suitable means )  within the last year  . 
+__label__true the data in the database is analyzed according to the influenza epidemic heuristic to determine if an epidemic is occurring in the region defined by the zip code that match the first three numbers in the provided zip code  ( e . g .  if zip code 27695 is provided ,  all data with zip code 276xx is analyzed ,  where each x is any digit from 0-9 )  . 
+__label__true the lhcp is provided a bar chart of diagnosis counts during the specified time period as well as a yes or no answer on whether an epidemic is occurring during any consecutive two weeks during the time period . 
+__label__false 3 . 2 . 45 . 4 alternate flows . 
+__label__false the hcp types an invalid diagnosis code and is prompted to try again . 
+__label__false the hcp types a invalid zip code  ( zip codes are five digits )  and is prompted to try again . 
+__label__false the hcp types an invalid date and is prompted to try again . 
+__label__false 3 . 2 . 45 . 5 logging . 
+__label__uc46 view patient group reports use case .  3 . 2 . 46
+__label__false 3 . 2 . 46 . 1 precondition . 
+__label__false an lhcp has authenticated him or herself in the itrust medical records system  ( uc2 )  . 
+__label__false 3 . 2 . 46 . 2 main flow . 
+__label__true the lhcp requests a comprehensive report for all patients with a specified gender ,  age ,  and diagnosis  . 
+__label__true the lhcp is able to view the comprehensive group report  . 
+__label__false 3 . 2 . 46 . 3 sub-flows . 
+__label__true the lhcp chooses to view a report of all patients of a single or either gender ,  in a specified age range  ,  with none ,  one ,  or more diagnoses . 
+__label__true the lhcp can view of the comprehensive patient report for the specified group ,  including the information below . 
+__label__true all patient demographic information  ( address ,  phone ,  etc .  )  ,  see  ( uc4 )  and data format 6 . 1 . 
+__label__true all diagnoses ,  including those not normally viewable by the requesting lhcp ,  see  ( uc11 )  and data format 6 . 5 . 
+__label__true all designated hcps  ( mids and names )  ,  see  ( uc6 )  . 
+__label__true all allergies ,  procedures ,  medications ,  office visits ,  and known relatives ,  see  ( uc11 )  and data format 6 . 5 ,  6 . 6 . 
+__label__true the lhcp can download an xml-formatted document containing the results of the group report . 
+__label__false 3 . 2 . 46 . 4 alternate flows . 
+__label__false the lhcp types an invalid age range and is prompted to try again . 
+__label__false 3 . 2 . 46 . 5 logging . 
+__label__uc47 find an expert use case .  3 . 2 . 47
+__label__false 3 . 2 . 47 . 1 precondition . 
+__label__false a patient has authenticated him or herself in the itrust medical records system  ( uc2 )  . 
+__label__false 3 . 2 . 47 . 2 main flow . 
+__label__true the patient looks for an hospital with experience in physical services ,  as specified by loinc codes of the office visits  ( uc15 )  and is given a list of the 5 most experienced hospitals in that particular field . 
+__label__false 3 . 2 . 47 . 3 sub-flows . 
+__label__true the patient is presented with a list of physical services ,  populated by the loinc codes  ( uc15 )  currently stored in itrust . 
+__label__true the patient selects the relevant physical services he is interested in ,  and is then presented with the top five hospitals with that experience . 
+__label__true the patient requests the closest hospitals so that only nearby hospitals are presented . 
+__label__false 3 . 2 . 47 . 4 alternate flows . 
+__label__false 3 . 2 . 47 . 5 logging . 
+__label__false 4 non-functional requirements . 
+__label__false 4 . 1 hipaa . 
+__label__false implementation must not violate hipaa guidelines . 
+__label__false 4 . 2 exclusive authentication . 
+__label__false the system shall enable multiple simultaneous users ,  each with his or her own exclusive authentication . 
+__label__false 4 . 3 form validation . 
+__label__false the form validation of the system shall show the errors of all the fields in a form at the same time . 
+__label__false 4 . 4 reports . 
+__label__false a report is a page which opens in a separate window and contains minimal decoration . 
+__label__false the format is printer-friendly in that the background is white and the information does not exceed the width of 750 pixels so that upon printing ,  no information is lost due to the information being too wide . 
+__label__false 4 . 5 privacy policy . 
+__label__false the system shall have a privacy policy linked off of the home page . 
+__label__false the privacy policy should follow the template provided here . 
+__label__false 4 . 6 security of mid . 
+__label__false remove mid from being displayed on all pages and urls . 
+__label__false mids should be considered private ,  sensitive information . 
+__label__false 5 constraints . 
+__label__false 5 . 1 language . 
+__label__false the system shall be implemented as a java server page web application . 
+__label__false 5 . 2 coding standards . 
+__label__false the implementation shall adhere to the java coding standards . 
+__label__false 5 . 3 documentation . 
+__label__false all new code shall be documented using the java documentation system . 
+__label__false 5 . 4 environment . 
+__label__false the implementation shall run on the windows platform in the eclipse 3 . 3 environment . 
+__label__false 5 . 5 testing . 
+__label__false all non-gui classes must have at least 80% unit testing or junit coverage of tests that pass . 
+__label__false 5 . 6 database . 
+__label__false to control open connections to the database ,  all database access should be done through an object that uses the singleton pattern . 
+__label__false 5 . 7 patterns . 
+__label__false the implementation must use the strategy pattern for epidemic detection and cause-of-death trends and the singleton pattern for database connections . 
+__label__false 5 . 8 static analysis . 
+__label__false uc1 create and disable patients use case
+__label__true an hcp creates patients . 
+__label__true the hcp enters a patient as a new user of system . 
+__label__true only the name and email are provided by the hcp . 
+__label__true the hcp can edit the patient according to data format . 
+__label__false patient mid should be the number . 
+__label__true the patient’s mid can not be edited . 
+__label__true the hcp does not have the ability to enter the patient ' s security question and password . 
+__label__true the hcp does not have the ability to edit the patient ' s security question and password . 
+__label__true the hcp does not have the ability to view the patient ' s security question and password . 
+__label__false uc2 create ,  disable ,  and edit personnel use case
+__label__true an admin creates a lhcp ,  an er and a public health agent . 
+__label__true a lhcp creates uaps . 
+__label__true system presents an approvel screen . 
+__label__true an administrator enters a lhcp ,  an er ,  or a public healh agent . 
+__label__true a secret key is personally provided to the user ,  with which the user can reset his or her password . 
+__label__true the admin must specify a specialty for a new lhcp  ( one of: general physician ,  heart surgeon ,  ob or gyn ,  pediatrician ,  surgeon )  . 
+__label__true the data for personnel can be edited according to data format . 
+__label__true the administrator shall be allowed to assign a lhcp to multiple hospitals . 
+__label__true the administrator can choose the hospitals . 
+__label__false the hospital id numbers for a lhcp are stored in the medical care personnel affiliation database . 
+__label__false uc3 authenticate users use case
+__label__true a user enters their mid and their password to gain role-based entry into itrust . 
+__label__true a user can request to change their password . 
+__label__false a session that has been inactive for too long is terminated . 
+__label__true an authenticated session ends when the user logs out or closes the itrust application . 
+__label__false electronic sessions must terminate after a "pre-determined" period of inactivity . 
+__label__true the administrator is allowed to set the length of this period of time . 
+__label__false all authorization is disabled after a period of inactivity that exceeds this length . 
+__label__false uc4 enter or edit demographics use case
+__label__true demographic information is entered . 
+__label__true demographic information is edited . 
+__label__true system presents a success or failure message to the editor . 
+__label__true the editor may correct the form or add more information . 
+__label__true an administrator enters a lhcp ,  an er or a public health agent as a user of system . 
+__label__true initially only the name and email are provided . 
+__label__true a secret key is personally provided to the user ,  with which the user can reset his or her password . 
+__label__true the admin must specify a specialty for a new lhcp  ( general physician ,  heart surgeon ,  ob ,  gyn ,  pediatrician ,  or surgeon )  . 
+__label__true the data for personnel can be edited according to data format 6 . 2  ( all fields mandatory except for associated mid and street address 2 )  . 
+__label__true the administrator shall be allowed to assign a lhcp to multiple hospitals . 
+__label__true the administrator can choose the hospitals . 
+__label__false the hospital id numbers for a lhcp are stored in the medical care personnel affiliation database  ( data format 5 . 11 )  . 
+__label__true a lhcp enters an uap as a user of system according to data format 6 . 2  ( all fields mandatory )  . 
+__label__false uc5 log transaction use case
+__label__true any event which views ,  creates ,  edits or deletes information is logged . 
+__label__true loggin failures ,  valid authentication and log outs are also logged . 
+__label__false these audit codes are summarized in the audit & transaction codetable . 
+__label__false uc6 view hcp designate or undesignate designated licensed health care professional use case
+__label__true the patient views all lhcps the patient has ever had an office visit with and those whom he or she had designated . 
+__label__true the patient can add also a lhcp to their provider list by searching for the name possibly and possibly specialty of a lhcp . 
+__label__true the patient can add the hcp to their list of providers . 
+__label__true the lhcp ' s name ,  specialty ,  address ,  date of office visit ,  and whether or not the lhcp is a dlhcp for this patient is indicated . 
+__label__true the list is sorted by the date of the last office visit  ( most recent first )  . 
+__label__true the patient can designate any lhcp as being a dlhcp for them . 
+__label__true the patient can undesignate any lhcp as being a dlhcp for them . 
+__label__true the patient may type a last name or partial last name ,  and optionally reduces the list of choices by providing the specialty . 
+__label__true the patient may optionally enter a zip code  ( match on first three numbers of zip code )  ,  in addition to the name possibly and possibly specialty . 
+__label__true the lhcp name ,  specialty ,  and  address are provided . 
+__label__false uc8 view access log use case
+__label__true the patient views his access log . 
+__label__true the patient then chooses the beginning and end date for the period of time . 
+__label__true the resulting list should include name of accessor ,  role of accessor relative to the patient ,  date and time of access and transaction type  ( see section 6 . 3 )  . 
+__label__true the patient views the list sorted by dates ,  most recent access first . 
+__label__true the patient views the list sorted by the role of the accessor relative to the patient  ( personal health representative ,  dlhcp ,  lhcp ,  uap ,  emergency responder; any order is fine as long as the list is sorted by role )  as well as by date for each role type . 
+__label__false uc9 view records use case
+__label__true a patient or personal representative may view medical records including family history . 
+__label__true the patient or personal representative can see patient personal health information ,  immunizations ,  and office visit information for their own records and the records for whom the user is a personal representative . 
+__label__true  ( if a patient or personal representative has not taken an office visit satisfaction survey for an office visit yet )  the patient may take the survey for an office visit  ( if the survey has already been taken ,  the patient or personal health representative will not have the ability to take the survey or view their previously submitted survey )  . 
+__label__true the patient or personal representative can see an abbreviated health history of their siblings ,  parents ,  and both sets of grandparents for which mids are available in itrust . 
+__label__true they can see diagnoses of blood pressure ,  high cholesterol ,  diabetes ,  cancer ,  heart disease ,  smoking ,  and the cause of death . 
+__label__false uc10 enter or edit personal health records use case
+__label__true an hcp enters a patient . 
+__label__true an hcp edits patient . 
+__label__true the information is viewed . 
+__label__true the information is edited . 
+__label__true the health care personnel enters a mid of a patient and confirms their selection . 
+__label__true the hcp can edit patient ' s historical values ,  patient ' s immunizations ,  patient ' s office visit information ,  patient ' s family history ,  and patient ' s bmi . 
+__label__true the hcp can indicate that the patient has passed away ,  providing an appropriate diagnosis code . 
+__label__true the hcp can graph height or weight of the patient over the last 3 calendar years . 
+__label__true for the patient ,  the hcp can choose height or weight to graph . 
+__label__true system presents a line chart giving the chosen measurements  ( either height or weight )  of the patient spanning the last 3 calendar years of data ,  averaged by quarters  ( january-march ,  april-june ,  july-september ,  october-december )  . 
+__label__true system presents an automatically-calculated value of bmi calculated based on the formula . 
+__label__false uc11 document office visit use case
+__label__true an hcp may document an office visit . 
+__label__true an hcp edits an office visit . 
+__label__true the hcp enters a mid  or name of a patient and confirms their selection . 
+__label__true the hcp then documents the office visit date and hospital location of the office visit . 
+__label__true the hcp notes about an office visit . 
+__label__true the hcp ' s medical identification number should also be maintained . 
+__label__true additionally ,  the hcp can document none ,  one ,  or more medications prescribed; none ,  one ,  or more lab procedures that are ordered  ( loinc code ,  see data format 6 . 11 ) ; none ,  one ,  or more diagnoses  ( via the icd-9cm code ) ; none ,  one ,  or more medical procedures performed; and none ,  one ,  or more immunizations given chosen from appropriate pull-down lists . 
+__label__true all events are logged . 
+__label__true hcps can return to an office visit . 
+__label__true hcps can modify or delete the fields of the office visit information  ( date ,  hospital ,  notes ,  prescriptions ,  laboratory procedures ,  diagnoses ,  procedures ,  possibly and possibly immunizations )  . 
+__label__true the event is logged and the hcp is returned in the specific office visit record to verify his changes . 
+__label__true the hcp selects a medication prescribed from a pull down list . 
+__label__true the hcp provides the dosage in milligrams ,  the start and end date for the prescription ,  and any special instructions . 
+__label__false the instructions can contain numbers ,  characters ,  symbols ,  blankspace and carriage return . 
+__label__true the hcp must provide instructions ,  or else they cannot add the prescription . 
+__label__true the hcp can add the prescription to the list of medications . 
+__label__false uc12 determine operational profile use case
+__label__true the software tester authenticates himself in the itrust . 
+__label__true system presents the actual operational profile of the operations of the itrust . 
+__label__false uc13 declare or undeclare personal representative use case
+__label__true a patient ' s dlhcp adds a patient ' s personal representative by typing that person ' s mid . 
+__label__true a patient ' s dlhcp deletes a patient ' s personal representative by typing that person ' s mid . 
+__label__false uc15 maintain standards lists use case
+__label__true an administrator maintains the standards list for immunizations ,  diagnoses ,  allowable drugs ,  or allowable physical services . 
+__label__true the administrator maintains a listing of allowable immunizations . 
+__label__true the administrator stores the cpt code and the name of the immunization . 
+__label__true the administrator maintains a listing of allowable diagnoses . 
+__label__true the administrator stores the icd-9cm code ,  a classification and the name of the diagnosis . 
+__label__true the administrator maintains a listing of allowable drugs . 
+__label__true the administrator stores the national drug code . 
+__label__true the administrator maintains a listing of allowable physical services  ( including laboratory procedures )  that an hcp can use . 
+__label__true the administrator stores information of a loinc code . 
+__label__false uc16 identify risk of chronic disease use case
+__label__true an lhcp chooses a chronic disease and a patient . 
+__label__false the data in the database is analyzed . 
+__label__false currently available risk factors for chronic diseases are defined for diabetes and type 1 and type2 and heart disease . 
+__label__true when the chosen patient satisfies the preconditions of the chosen chronic disease ,  the lhcp is provided with a warning message . 
+__label__true the message displays the risk factors that the patients exhibit . 
+__label__false uc17 proactively determine needed patient care use case
+__label__true an hcp chooses office visit reminders . 
+__label__true an hcp identifies chronic patients who need an office visit ,  older patients who need a flu shot ,  or any patient who is overdue for an immunization . 
+__label__true system presents a listing of patients for whom they are a dlhcp who need care because of satisfying the one of preceding conditions . 
+__label__true system presents patient ' s name and patient’s home phone number  ( so that reminder calls can be made )  . 
+__label__true the list is sorted based on the alphabetical order of the patients '  last names ,  and then first names . 
+__label__false uc18 maintain a hospital listing use case
+__label__true an administrator maintains the hospital listing . 
+__label__true the administrator stores hospital id number for the hospital and the name of the hospital . 
+__label__true the administrator adds a new entry for a hospital ,  or modify the hospital name in an existing entry . 
+__label__true the administrator is not allowed to delete an existing entry . 
+__label__true the administrator is not allowed to modify the hospital id number in an existing entry . 
+__label__false uc19 view prescription report use case
+__label__true a patient ,  personal representative or lhcp views prescription reports . 
+__label__true a message is sent to the patient and their personal representative . 
+__label__true the patient or the personal representative can view a list of their own prescriptions or the prescriptions for whom the user is a person representative by choosing one patient from a a list of these patients . 
+__label__true a prescription list is then displayed . 
+__label__true a prescription list is sorted by start date . 
+__label__true lhcp selects a patient from the list of requested reports . 
+__label__true the lhcp can view a prescription list for that patient ,  sorted by start date . 
+__label__true the prescription report is titled with the patient name . 
+__label__true the prescription list includes medication ,  date prescribed ,  start date ,  end date for each prescription ,  and the name of the doctor who prescribed the medication . 
+__label__false uc21 view emergency electronic health record use case
+__label__true a lhcp or er views an emergency report and provides an mid . 
+__label__true the lhcp obtains a printable report . 
+__label__true the lhcp or er enters a mid and confirms the input . 
+__label__false uc22 flow of events for the schedule appointments use case
+__label__true an administrator can manage a standardized list of appointment types . 
+__label__true an lhcp can schedule an appointment with a patient . 
+__label__true both patients and lhcps can view a list of their upcoming appointments . 
+__label__true lhcp can edit future appointments . 
+__label__true lhcp can delete future appointments . 
+__label__true the administrator adds a new entry for an appointment type ,  including its type name with up to 30 alpha characters and duration in the unit of minutes . 
+__label__true the administrator modifies the duration in an existing entry . 
+__label__false a new entry shall not have the same type name as that of any existing entry . 
+__label__true the administrator is not allowed to delete an existing entry . 
+__label__true the administrator is not allowed to modify the appointment type name in an existing entry . 
+__label__true the lhcp schedules an appointment with a patient . 
+__label__true the lhcp enters the patient mid ,  selects the type of appointment from a pull-down menu of the existing appointment types ,  enters the appointment date and time ,  enters comment  ( optional )  up to 1000 characters such as reason for the appointment . 
+__label__true an lhcp views a list of his upcoming appointments . 
+__label__true a patient views a list of his upcoming appointments . 
+__label__true the user opens his upcoming appointment list . 
+__label__true each row in the list includes the appointment type ,  appointment date and time ,  duration ,  and the name of either the patient or the lhcp . 
+__label__true the appointments in the list shall be ordered by appointment date and time ,  the soonest upcoming first . 
+__label__false the row for each conflicting appointment is highlighted in bold . 
+__label__true when viewing the calendar ,  the user selects an appointment from the list to read comment by clicking the "read comment" link beside the row for the appointment ,  and then the comment for the appointment shall be displayed in a new page . 
+__label__true when an lhcp views a list of his upcoming appointments ,  system presents an option to edit or remove the appointment . 
+__label__true the lhcp is not able to edit any past appointments . 
+__label__true the lhcp is not able to remove any past appointments . 
+__label__false uc23 view comprehensive patient report use case
+__label__true the lhcp requests a comprehensive patient report for a particular patient . 
+__label__true the lhcp is able to view the comprehensive patient report . 
+__label__true the lhcp enters a patient ' s mid and confirms his input . 
+__label__true the lhcp can view of the comprehensive patient report for the specified patient
+__label__false uc24 take satisfaction survey use case
+__label__true a patient or personal representative can answer any of the following questions relative to a previous office visit . 
+__label__true the answers to the survey are stored . 
+__label__false uc25 view physician satisfaction survey results use case
+__label__true a user views physician satisfaction survey results . 
+__label__true the user provides a zip code or a hospital code and an physician type . 
+__label__true the patient is provided with the name for each physician . 
+__label__false uc26 view or edit laboratory procedure status use case
+__label__true a patient ,  personal health representative or hcp views laboratory procedure status . 
+__label__true a hcp edits a laboratory procedure . 
+__label__true a message is sent to the patient and their personal representative . 
+__label__true the patient can view a list of laboratory procedures and status for their own records and the records for which the user is a personal representative . 
+__label__false the reports are viewed under the "view my records" tab . 
+__label__true only laboratory procedures for which the hcp has allowed viewing access are shown . 
+__label__true the list is sorted by date of the last status update ,  most recent first . 
+__label__true the hcp enters a mid of a patient and confirms their input . 
+__label__true the hcp can view a list of laboratory procedures and results ,  sorted by the date of the last status update ,  most recent first . 
+__label__true the hcp can allow viewing access to the laboratory results . 
+__label__true the hcp can disallow viewing access to the laboratory results . 
+__label__true the hcp can edit the office visit in which the laboratory procedure was ordered . 
+__label__true the hcp enters a mid of a patient and confirms their input . 
+__label__true the hcp can view a list of laboratory procedures and can update the status and comments . 
+__label__true the list is sorted by the dates of the last status update . 
+__label__true an email notification is sent . 
+__label__false uc27 alert users by email use case
+__label__true an email alert is sent out to the itrust user in the event of a changed password ,  status change in laboratory procedure ,  comprehensive report requested and generated . 
+__label__false uc28 view patients
+__label__true the lhcp views all patients with which he or she has ever had an office visit with . 
+__label__true system presents the patient’s name ,  patient’s address ,  and patient’s date of last office visit . 
+__label__true the list is sorted by the date of the last office visit . 
+__label__false uc29 find lhcps with experience with a diagnosis
+__label__true a patient finds the lhcps who have handled that condition . 
+__label__true the patient chooses my diagnoses . 
+__label__true system presents a listing of all their own diagnoses ,  sorted by diagnosis date  ( more recent first )  . 
+__label__true the patient can select a diagnosis . 
+__label__true system presents the lhcps in the patient ' s living area  ( based upon the first three numbers of their zip code )  who have handled this diagnosis in the last three years . 
+__label__true the list is ranked by the quantity of patients the lhcp has treated for that diagnosis  ( each patient is only counted once regardless of the number of office visits )  . 
+__label__false uc30 messaging between lhcp and patient
+__label__true an lhcp sends a message to a patient or the patient’s personal representative . 
+__label__true a patient ' s personal representative or a patient or personal representative sends a message to dlhcp or that of a person they are representing . 
+__label__true lhcps ,  patients and representatives may reply to messages . 
+__label__true an lhcp ,  patient and representative may view a message . 
+__label__true an lhcp ,  patient and representative can sort his message inbox and message outbox . 
+__label__true an lhcp ,  patient and representative can modify and save his message displaying filter . 
+__label__true an lhcp views his message inbox . 
+__label__true a patient or personal representative for a patient sends a message to an lhcp . 
+__label__true system presents a menu of dlhcp . 
+__label__true the patient or representative chooses one of these dlhcp . 
+__label__true the patient types the subject and the text of a message . 
+__label__true the representative types the subject and the text of a message . 
+__label__false the patient clicks the send button . 
+__label__false the representative clicks the send button . 
+__label__true a row for showing the message subject ,  the name of the recipient ,  and the timestamp  ( which includes both date and time )  is then visible in the patient or representative’s message outbox . 
+__label__true a bolded row for showing the message subject ,  the name of sender ,  and the timestamp is then visible in the lhcp ' s message inbox . 
+__label__true a fake email is sent to the lhcp alerting the user that a new message has arrived . 
+__label__true after a message is sent ,  the patient or personal representative is directed to his message outbox . 
+__label__true an lhcp sends a message to a patient or representative  ( no multiple recipients allowed in a single message )  . 
+__label__true the lhcp enters the patient ' s mid . 
+__label__true the lhcp confirms the patient ' s mid . 
+__label__true the lhcp enters the representative ' s mid . 
+__label__true the lhcp confirms the representative ' s mid . 
+__label__true the lhcp types the subject  ( up to 100 characters )  and the text of a message  ( up to 1000 characters )  ,  and clicks the send button . 
+__label__true a row for showing the message subject ,  the name of the recipient ,  and the timestamp is then visible in the lhcp’s message outbox . 
+__label__true a bolded row for showing the message subject ,  the name of the sender ,  and the timestamp is then visible in the patient or representative’s message inbox ,  and a fake email is sent to the patient or representative that indicates that he or she has a new message from an lhcp . 
+__label__true after a message is sent ,  the lhcp is directed to his message outbox . 
+__label__true the patient views his message inbox . 
+__label__true the representative views his message inbox . 
+__label__true the patient opens the message to which he or she wishes to reply ,  and then clicks the reply link above the message text . 
+__label__true the representative opens the message to which he or she wishes to reply ,  and then clicks the reply link above the message text . 
+__label__true the patient enters the text of the response message  ( up to 1000 characters )  ,  then clicks the send button . 
+__label__true the representative enters the text of the response message  ( up to 1000 characters )  ,  then clicks the send button . 
+__label__true a row for showing the message subject  ( now preceded by "re:" )  ,  the name of the recipient ,  and the timestamp is then visible in the patient or representative’s message outbox . 
+__label__true a bolded row for showing the message subject  ( now preceded by "re:" )  ,  the name of the sender ,  and timestamp is then visible in the lhcp’s message inbox . 
+__label__true a fake email is sent to the lhcp alerting the lhcp that a new message reply has arrived . 
+__label__true the lhcp views his message inbox . 
+__label__true the lhcp opens the message to which he or she wishes to reply . 
+__label__true the lhcp clicks the reply link above the message text . 
+__label__true the lhcp enters the text of the response message  ( up to 1000 characters )  ,  then clicks the send button . 
+__label__true a row for showing the message subject  ( now preceded by "re:" )  ,  the name of the recipient ,  and the timestamp are then visible in the lhcp’s message outbox . 
+__label__true a bolded row for showing the message subject  ( now preceded by "re:" )  ,  the name of sender ,  and timestamp are then visible in the patient’s message inbox . 
+__label__true a fake email is sent to the patient alerting the patient that a new message reply has arrived . 
+__label__true a patient ,  patient representative or lhcp opens his message inbox or outbox . 
+__label__true each row in the message inbox or outbox includes the message subject ,  the name of either the sender  ( only for the case of inbox )  or recipient  ( only for the case of outbox )  ,  and timestamp . 
+__label__true by default ,  the messages in the message inbox should be ordered by timestamp ,  the most recent first . 
+__label__true each row for an unread message in the message inbox is bolded . 
+__label__true the user selects a message from the message inbox or outbox to read by clicking the "read" link beside the row for the message ,  and then the message subject ,  the name of the sender ,  the name of the the recipient ,  timestamp ,  and the message text shall be displayed in a new page . 
+__label__true after a message in the message inbox is read  ( i . e .  ,  displayed in a new page )  ,  the row for the message in the message inbox is not bolded anymore . 
+__label__true a patient ,  patient representative ,  or lhcp can sort messages in his message inbox by either the sender ' s last name or timestamp  ( but not both )  in either ascending or descending order  ( where timestamps in descending order would have the most recent first )  . 
+__label__true a patient ,  patient representative ,  or lhcp can sort messages in his message outbox by the recipient ' s last name or timestamp  ( but not both )  in either ascending or descending order . 
+__label__true a patient ,  patient representative ,  or lhcp selects one option out of the "sort by" labeled drop-down box  ( with options of "sender or recipient" or "timestamp" )  . 
+__label__true a patient ,  patient representative ,  or lhcp selects one option out of the "by order of" labeled drop-down box  ( with options of "ascending" or "descending" )  . 
+__label__true a patient ,  patient representative ,  or lhcp then clicks the "sort" button . 
+__label__true sorted order is not saved for later viewing ,  after the message inbox or outbox is reopened again  ( where the default sorting is always used )  . 
+__label__true an lhcp ,  patient or representative can modify his "messagedisplayingfilter" by modifying the following filtering criteria . 
+__label__false a single filter includes values for these five filtering criteria  ( rather than five filters for these five filtering criteria )  and a value could be an empty string ,  indicating that this criterion has no impact on filtering  ( i . e .  ,  imposing no constraints related to this criterion )  . 
+__label__true the user interface shall be initially populated with the values of the filtering criteria from the previously saved filter . 
+__label__true the lhcp ,  the patient or the representative clicks the "cancel" button to cancel the modifications of the filter  ( i . e .  ,  repopulate the user interface with the values of the filtering criteria from the previously saved filter )  . 
+__label__true the lhcp ,  the patient or the representative clicks the "test search" button to search  ( i . e .  ,  displaying the message inbox including only the messages satisfying the specified filtering criteria )  . 
+__label__true the lhcp ,  the patient or the representative clicks the "save" button to save the modified filter . 
+__label__true each user is associated with only one filter  ( being saved across login sessions )  and applies only this saved filter . 
+__label__true the user ' s associated filter initially has all empty inputs for the filtering criteria before the user modifies it . 
+__label__false uc31 find lhcps for prescription renewal use case
+__label__true a patient renews the patient ' s expired prescriptions  ( i . e .  ,  prescriptions '  end dates are earlier than the current date )  and therefore finds the lhcps who earlier wrote the patient ' s expired prescriptions  ( it is assumed that the doctors who wrote prescriptions are all lhcps so no lhcp checks on the prescription-writing doctors are needed )  . 
+__label__true the patient chooses prescription report . 
+__label__true system presents a list of the patient ' s expired prescriptions ,  sorted by start date  ( the later date is ranked earlier closer to the top )  . 
+__label__true the patient can view contact information of a selected lhcp shown in the expired prescription list . 
+__label__false uc33 refer and provide consultations use case
+__label__true a lhcp refers a patient to another receiving lhcp . 
+__label__true a hcp reviews consultations . 
+__label__true a lhcp reviews the consultation . 
+__label__true an lhcp refers a patient to another receiving lhcp . 
+__label__true system presents a menu of his patients and a menu of other lhcps . 
+__label__true when the patient and lhcp are chosen ,  system presents the mid of the patient that will be sent to the receiving hcp . 
+__label__true system presents a text box to hcp . 
+__label__true the lhcp then sends the request or to cancel . 
+__label__true the status of the consultation being sent is set as "pending" . 
+__label__true an lhcp reviews pending consultations . 
+__label__true system presents a list of pending referrals . 
+__label__true the lhcp then selects a referral to view details . 
+__label__true system presents the mid of the sending lhcp ,  the patient mid ,  and the referral details . 
+__label__true system presents an option  ( "finish" ,  "decline" ,  "pending" with "pending" as default value )  to mark the status of the consultation and a text box to enter the details of the consultation . 
+__label__true then ,  the lhcp can confirm the status setting or consultation entering or cancel . 
+__label__false uc34 report telemedicine monitoring details use case
+__label__true an lhcp or uap creates a list of patients  ( by mid )  for which he or she will monitor remotely . 
+__label__true a patient inputs his blood pressure or glucose levels . 
+__label__true a patient inputs his weight ,  height or pedometer readings . 
+__label__true an lhcp can see the blood pressure and glucose levels ,  weight ,  height ,  and pedometer readings for the patients he or she is monitoring ,  with two separate lists for physiologic and height or weight or pedometer readings . 
+__label__true a uap or patient representative can input the blood pressure ,  glucose levels ,  height ,  weight ,  or pedometer readings for a patient . 
+__label__true a patient may have up to 10 physiologic data points in any one day ,  reported by him or herself ,  a uap ,  or a personal representative . 
+__label__true a patient may have at most one height data point ,  one weight data point ,  and one pedometer data point in any one day ,  reported by him or herself ,  a uap ,  or a personal representative . 
+__label__true an lhcp or uap can add patients from his monitoring list . 
+__label__true an lhcp or uap can delete patients from his monitoring list . 
+__label__true a patient is added to the list by the lhcp or uap through typing in the patient ' s mid or name . 
+__label__true an lhcp can delete a patient from his monitoring list by the lhcp typing the the patient ' s mid . 
+__label__true in both cases ,  system presents the name of the patient . 
+__label__true the lhcp must confirm the add . 
+__label__true the lhcp must confirm the delete . 
+__label__true for each patient from the monitoring list ,  the lhcp can edit blood pressure ,  glucose levels ,  height ,  weight and pedometer readings . 
+__label__true by default ,  all types of information are selected for monitoring . 
+__label__true a patient reports their physiologic data . 
+__label__true he can report his blood pressure  ( systolic and diastolic )  and glucose levels . 
+__label__true the input data ,  a timestamp and the fact are saved . 
+__label__true an lhcp views the physiologic data monitoring details . 
+__label__true system presents a listing of all his patients . 
+__label__true patients with no information for the current day are highlighted . 
+__label__true patients with blood pressure or glucose level out of range are highlighted  ( normal blood pressure: systolic 90-140; diastolic 60-90; normal glucose 70-150 )  . 
+__label__true the lhcp can select a patient to obtain additional information about a patient . 
+__label__true an lhcp views additional information for a patient . 
+__label__true system presents a screen upon which he can choose a date range . 
+__label__true the lhcp can see the patient’s name ,  patient’s phone number ,  patient’s personal representative ,  patient’s blood pressure ,  patient’s glucose levels ,  patient’s height ,  patient’s weight ,  and patient’s pedometer readings as well as whom reported the data  ( patient ,  uap name ,  personal representative name )  for that date range . 
+__label__true a uap can report physiologic measurements . 
+__label__true system presents a list of the patients . 
+__label__true he can select a patient and then enter data . 
+__label__true he can report the blood pressure and glucose levels for the patient . 
+__label__true the input data ,  a timestamp ,  and the fact and their mid are saved . 
+__label__true system displays only the applicable input entries to the uap . 
+__label__true a patient can report physiologic measurements . 
+__label__true system presents a list of the patients . 
+__label__true he can select a patient and then enter data . 
+__label__true he can report the blood pressure and glucose levels for the patient . 
+__label__true the input data and a timestamp and the fact and their mid are saved . 
+__label__true system displays only the applicable input entries to the patient . 
+__label__true a patient reports his height ,  weight and pedometer data . 
+__label__true the input data ,  a timestamp and the fact are saved . 
+__label__true system displays only the applicable input entries to the patient . 
+__label__true an lhcp views the height ,  weight and pedometer data monitoring details . 
+__label__true system presents  a listing of all his patients . 
+__label__true patients with no information for the current day are highlighted in red . 
+__label__true patients with a weight value 5% more or less than the immediate previously recorded weight value are highlighted . 
+__label__true the lhcp can obtain additional information about a patient . 
+__label__true a uap can report height ,  weight and pedometer measurements . 
+__label__true system presents a list of the patients whose height ,  weight ,  or pedometer data type is specified to be under monitoring and for which he or she is allowed to report measurements . 
+__label__true he can select a patient and then enter data . 
+__label__true he can report the height ,  weight and pedometer reading for the patient . 
+__label__true the input data ,  a timestamp and the fact  and his mid are saved . 
+__label__true system displays only the applicable input entries to the uap . 
+__label__true a patient can report height ,  weight and pedometer readings for those for whom he or she is a patient representative . 
+__label__true system presents a list of the patients for which he is allowed to report measurements . 
+__label__true he can select a patient and then enter data . 
+__label__true he can report the height ,  weight and pedometer readings for the patient . 
+__label__true the input data ,  a timestamp ,  and the fact and his mid are saved . 
+__label__true system displays only the applicable input entries to the patient . 
+__label__false uc35 report adverse event use case
+__label__true a patient reports an event related to a prescription drug or immunization reaction . 
+__label__true system presents a listing of all prescription drugs for which he has been prescribed and has taken in the last 12 months . 
+__label__true the patient chooses drugs for which to report the adverse event . 
+__label__true the patient is then able to write a textual description . 
+__label__true a fake email is sent to the lhcp who prescribed the medication indicating the patient name and mid ,  drug ,  and symptoms . 
+__label__true system presents a listing of all immunizations for which he has been administered in the last 12 months . 
+__label__true the patient chooses the immunization for which to report the adverse event . 
+__label__true the patient is then able to write a textual description . 
+__label__true a fake email is sent to the lhcp who administered the immunization indicating the patient name and mid ,  drug ,  and symptoms . 
+__label__false uc36 monitor adverse event use case
+__label__true a public health agent selects a specific time period for which he would like to see a detailed listing of all adverse events related to prescription drugs or immunizations . 
+__label__true a public health agent sees trends in adverse events relate to prescription drugs or immunizations . 
+__label__true system presents a listing of prescription drug-related adverse events for the time period that do not have a status of "removed" ,  sorted by ndc . 
+__label__true the public health agent can see the detail of a specific report . 
+__label__true upon reading the report ,  the public health agent can send a "fake email" message to the adverse event reporter to gain more information about the report . 
+__label__true the public health agent may  remove an adverse event report  ( such as based upon communication with the reporter or because the report appears to be bogus )  . 
+__label__true system presents a listing of immunization-related adverse events for the time period that do not have a status of "removed" ,  sorted by cpt code  . 
+__label__true the public health agent can see the detail of a specific report . 
+__label__true upon reading the report ,  the public health agent can send a "fake email" message to the adverse event reporter to gain more information about the report . 
+__label__true also ,  the public health agent may  remove an adverse event report  ( such as based upon communication with the reporter or because the report appears to be bogus )  . 
+__label__true the adverse event report changes to a status of "removed . "
+__label__true a message of the removal is sent to the adverse event reporter and to the lhcp . 
+__label__false uc37 safe drug prescription use case
+__label__true the hcp prescribes a patient a drug by selecting its ndc and name . 
+__label__true the hcp must proceed with the prescription . 
+__label__true the hcp must cancel the prescription . 
+__label__true the hcp must remain on the office visit page . 
+__label__true the administrator maintains the overriding reasons that an hcp can select from . 
+__label__true the drug is checked against the patient ' s drug allergies . 
+__label__true the hcp is notified of drug allergy . 
+__label__true the drug is checked for interactions between other drugs currently taken by the patient . 
+__label__true the hcp is notified of possible interactions . 
+__label__true the hcp selects reasons out from the nine reasons listed here for the overriding . 
+__label__true the patient is sent a "fake email" . 
+__label__true the administrator is allowed to add a new entry for a reason . 
+__label__true the administrator is allowed to modify the reason name in an existing entry . 
+__label__true the administrator is not allowed to delete an existing entry . 
+__label__true the administrator is not allowed to modify the reason id number in an existing entry . 
+__label__true the system shall store reason id number for the reason and the name of the reason . 
+__label__false uc38 maintain drug interaction use case
+__label__true the administrator records a drug interaction between two prescription drugs . 
+__label__true the administrator deletes a drug interaction between two prescription drugs . 
+__label__true system presents two lists of ndc codes or names . 
+__label__true the administrator chooses a drug from each list to record an interaction between the two drugs . 
+__label__true the two drugs and a textual description of the possible effects of the interaction are stored . 
+__label__true the administrator selects one drug . 
+__label__true system presents a listing of all drug interactions with that drug . 
+__label__true the administrator can select a particular pair of drugs . 
+__label__true the administrator can delete the interaction between the two drugs . 
+__label__false uc40 view schedule calendar use case
+__label__true an lhcp or patient can click the "view appointment calendar" link to view his appointments in the current month . 
+__label__true a patient can click the "view full calendar" link to view his appointments in the current month . 
+__label__true an lhcp views his appointments in the current month . 
+__label__true an patient views his appointments in the current month . 
+__label__true system displays his appointments in the current month . 
+__label__true the user can select an appointment from the calendar to read the appointment ' s details . 
+__label__true a patient views his appointments in the current month together with his office visit dates ,  prescription dates ,  and lab procedure dates of the current month on a calendar for the current month . 
+__label__true system displays his appointments on the calendar . 
+__label__true the user can select an appointment from the calendar to read the appointment ' s details . 
+__label__true in the calendar ,  the date entry with an office visit shall display a label as the diagnoses for the office visit . 
+__label__true the user can select an office visit from the calendar to read the visit ' s details . 
+__label__true in the calendar ,  the date entry with a prescription date  ( i . e .  ,  the date of the office visit the medication was prescribed on )  shall display a label for the medications prescribed  ( i . e .  ,  ndc ,  see data format 5 . 6 )  in the prescription . 
+__label__true the user can select a prescription from the calendar to read the prescription ' s details . 
+__label__true in the calendar ,  the date entry with a laboratory procedure  ( i . e .  ,  the entry of the its last status update date )  shall display a label as the loinc code for the laboratory procedure . 
+__label__true the user can select a laboratory procedure from the calendar to read the laboratory procedure ' s details . 
+__label__true in the calendar ,  the date entry with an appointment shall display a label as the appointment type name for the appointment . 
+__label__true the date entry including conflicting appointments is highlighted in bold  ( a conflicting appointment is one that has overlap in its appointment duration period with that of at least another appointment of the same user )  . 
+__label__true the user selects an appointment from the calendar to read its details by clicking the "read details" link beside or below the appointment type name . 
+__label__true system displays the details for the appointment in a new page ,  including the appointment type ,  the appointment date and start time ,  comment ,  and the name of either the patient  ( only for the user being an lhcp )  or the lhcp  ( only for the user being a patient )  . 
+__label__true the user selects an office visit from the calendar to read its details by clicking the "read details" link beside or below the icd-9cm code  ( i . e .  ,  diagnose )  . 
+__label__true system displays the details for the visit in a new page ,  including date of office visit ,  note text ,  diagnoses  ( i . e .  ,  icd-9cm codes )  ,  medical procedures performed  ( i . e .  ,  cpt code )   ,  lab procedures ordered  ( loinc code ,  see data format 6 . 11 )  ,  medications prescribed  ( i . e .  ,  ndc ,  see data format 5 . 6 )  ,  immunizations given  ( i . e .  ,  cpt code ,  see uc15 ,  s1 )  ,  and the name of the doctor who prescribed the medication . 
+__label__true the user selects a prescription from the calendar to read its details by clicking the "read details" link beside or below the medication displayed for the prescription . 
+__label__true system displays the details for the prescription in a new page ,  including the medications prescribed . 
+__label__true the user selects a laboratory procedure from the calendar to read its details by clicking the "read details" link beside or below the loinc code displayed for the laboratory procedure . 
+__label__true system displays the details for the laboratory procedure in a new page . 
+__label__false uc42 view notifications use case
+__label__true an lhcp views his itrust homepage . 
+__label__true on the lhcp homepage ,  the lhcp views a notification center with a list of his upcoming appointments for the current date ,  number of physiologic data monitoring reports of his patients for the current date ,  number of weight or pedometer data monitoring reports of his patients for the current date ,  number of unread messages from his message inbox . 
+__label__true the event is logged . 
+__label__true a patient or personal health representative views his itrust homepage . 
+__label__true on the patient homepage ,  the patient views a notification center . 
+__label__true the notification center displays the message  ( you haven ' t entered remote monitoring information for today yet !  ) 
+__label__true the notification center also displays a list of the patient and patient representee upcoming appointments ,  the information of his designated hcp ,  and the number of unread messages from his message inbox . 
+__label__true an lhcp views a list of his upcoming appointments for the current date ,  with each appointment displayed in the format "hh:mm am or pm - appointmenttype" . 
+__label__true the lhcp views an appointment . 
+__label__true the appointment details display the appointment type ,  appointment date and the start time ,  duration ,  the name of the patient ,  and appointment comments . 
+__label__true a patient or personal health representative can view a list of his upcoming appointments for himself or herself ,  as well as appointments for the patients he represents . 
+__label__true the appointments are listed in the format "mm / dd / yyyy - appointmenttype" . 
+__label__true the patient or personal health representative views an appointment . 
+__label__true the appointment details include the appointment type ,  the appointment date ,  the appointment start time ,  the duration ,  the name of the lhcp ,  and the appointment comments . 
+__label__true an lhcp views the number of submitted physiologic data monitoring reports of his patients for the current date . 
+__label__true the lhcp views the physiologic data monitoring details of his patients for the current date . 
+__label__true system presents a listing of all his patients to view physiologic data reported during the current date . 
+__label__true each row in the list includes their blood pressure and glucose levels ,  recording timestamp ,  and whom reported the data  ( patient ,  uap name ,  personal representative name )  . 
+__label__true an lhcp views the number of submitted weight data monitoring reports of his patients for the current date . 
+__label__true the lhcp views the weight or pedometer monitoring details of his patients for the current date . 
+__label__true system presents a listing of all his patients to view weight or pedometer data reported during the current date . 
+__label__true each row in the list includes their weight and pedometer reading numbers levels ,  recording timestamp ,  and whom reported the data  ( patient ,  uap name ,  personal representative name )  . 
+__label__true a patient ,  patient representative ,  or lhcp views the number of unread messages from his message inbox . 
+__label__true a patient ,  patient representative ,  or lhcp clicks this number to view his message inbox . 
+__label__true system presents a list of his messages in the message inbox . 
+__label__true each row in the list includes the message subject ,  the name of the sender ,  and timestamp . 
+__label__true by default ,  the messages in the list should be ordered by timestamp ,  the most recent first . 
+__label__true the user selects a message from the list to read by clicking the "read" link beside the row for the message ,  and then the message subject ,  the name of the sender ,  the name of the the recipient ,  timestamp ,  and the message text shall be displayed in a new page . 
+__label__true a patient views basic information about his designated lhcps ,  including the name ,  phone number ,  and contact email information . 
+__label__true a personal health representative views basic information about his designated lhcps ,  including the name ,  phone number ,  and contact email information . 
+__label__false uc43 view activity feed use case
+__label__true an activity feed is displayed . 
+__label__true only the most recent 20 activities are listed in the user page after login . 
+__label__true a link of "older activities" shall be displayed . 
+__label__true the patient can click this link . 
+__label__true the system shall append 20 more activities to the end of the currently listed activities on the same page . 
+__label__true similarly a link of "older activities" shall be further displayed and so on . 
